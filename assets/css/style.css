@@ -1,0 +1,367 @@
+/* ======================
+* GOOGLE FONTS IMPORTED
+====================== */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+?   font-family: "Alfa Slab One", serif;
+?   font-family: "Montserrat", sans-serif;
+?   font-family: "Bebas Neue", sans-serif;
+*/
+
+/* ======================
+* GLOBAL STYLE 
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}
+
+/*  
+* TOGGLE BAR STYLE
+*/
+.toggle-bar {
+  color: #3d2514 !important;
+}
+.navbar-toggler {
+  border: 2px solid #3d2514 !important;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  color: #3d2514;
+}
+
+h1,
+h2 {
+  color: #3d2514;
+  font-family: "Alfa Slab One", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*  
+* BUTTON STYLE
+*/
+.primary-btn {
+  padding: 12px 35px;
+  background-color: #bf2222;
+  border: 2px solid transparent;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+.primary-btn:hover {
+  background-color: transparent;
+  border-color: #bf2222;
+  color: #bf2222;
+}
+
+/*  
+* SECTION HEADER STYLE
+*/
+.section-header {
+  padding: 0 0 50px;
+  text-align: center;
+}
+.top-header {
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #ffc045;
+  padding: 5px 10px;
+}
+.main-header {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+.main-header-form {
+  font-family: "Alfa Slab One", serif;
+  font-size: 50px;
+}
+.header-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.header-description {
+  font-size: 17px;
+}
+
+/* ======================
+* HOME SECTION STYLE
+====================== */
+header {
+  min-height: 115vh;
+  background: url(../images/home-bg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  padding: 40px 0;
+}
+.navbar-brand img {
+  width: 180px;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 7px;
+  transition-duration: 0.3s;
+}
+.nav-link:hover {
+  box-shadow: 1px 1px 7px 3px;
+  color: #3d2514;
+}
+
+#home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#home .home-content .bordered-content {
+  border: 2px dashed #3d2514;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+#home .home-content h1 {
+  text-transform: uppercase;
+  text-shadow: 3px 3px #ffffff;
+  font-size: 110px;
+  font-weight: 900;
+  line-height: 125px;
+}
+#home .home-content h2 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px #ffffff;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+/* ======================
+* FEATURES SECTION STYLE
+====================== */
+#features {
+  padding: 20px 0 60px;
+}
+.feature-item {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.feature-content {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  padding: 20px;
+  transition-duration: 3s;
+}
+.feature-content:hover {
+  text-decoration: underline;
+}
+.feature-item img {
+  transform: scale(1);
+  transition-duration: 0.3s;
+}
+.feature-item:hover.feature-item img {
+  transform: scale(1.2);
+}
+
+/* ======================
+* CHOOSE SECTION STYLE
+====================== */
+.choose-item:hover.choose-item .image {
+  transform: translateY(-10px);
+}
+.choose-item .image {
+  width: 400px;
+  height: 250px;
+  transition-duration: 0.3s;
+}
+.choose-item .image.middle {
+  width: 310px;
+  margin: auto;
+}
+.choose-item .description h3 {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+.choose-item:hover.choose-item .description h3 {
+  color: #bf2222;
+}
+
+/* ======================
+* EVENTS SECTION STYLE
+====================== */
+#events {
+  padding: 80px 0;
+}
+.events-slider {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.events-slider .item {
+  padding: 30px;
+}
+
+.events-item {
+  position: relative;
+}
+.owl-theme .owl-dots {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #dcdcdc !important;
+  margin: 0 3px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ffc045 !important;
+}
+
+.events-description {
+  padding-top: 30px;
+}
+.events-description .title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0;
+}
+.events-description h3 {
+  font-size: 35px;
+  font-family: "Alfa Slab One", serif;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.events-description p {
+  font-size: 17px;
+}
+
+/* ======================
+* RESERVATION / FORM SECTION STYLE
+====================== */
+#reservation {
+  min-height: 80vh;
+  position: relative;
+}
+.reservation-form {
+  min-height: 80vh;
+}
+.left-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  z-index: -1;
+}
+.right-image {
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  width: 240px;
+  z-index: -1;
+}
+#reservation .col-md-10 {
+  margin-bottom: -125px;
+}
+.reservation-form button {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px !important;
+}
+.form-control {
+  border-radius: 3px !important;
+}
+
+/* ======================
+* FOOTER STYLE
+====================== */
+footer {
+  padding: 0 0 60px;
+  color: #ffffff;
+}
+.footer {
+  background: url(../images/footer-bg.png) center center no-repeat;
+  background-size: cover;
+  padding: 60px 25px 25px;
+}
+footer .description p {
+  padding: 30px 15px 100px 0;
+}
+footer .contact-info {
+  padding: 40px 0 0 200px;
+}
+footer .contact-info h3 {
+  font-size: 20px;
+}
+footer .contact-info h3 i {
+  text-align: center;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+footer .company-details small {
+  font-size: 16px;
+}
+footer .social-info {
+  text-align: end;
+}
+footer .social-info a {
+  font-size: 20px;
+  color: #090909;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  padding: 20px;
+  transition-duration: 0.3s;
+}
+footer .social-info a:hover {
+  background-color: #ffc045;
+  color: #ffffff;
+}
